@@ -2,6 +2,8 @@
 
 A professional, modern website for a wound care practice featuring responsive design, clean UI, and comprehensive information about wound care services.
 
+> **Note:** This repository does not yet have a master branch. See [CREATE_MASTER_BRANCH.md](CREATE_MASTER_BRANCH.md) for instructions on creating one, or run the `create-master-branch.sh` script.
+
 ## Features
 
 - **Responsive Design**: Fully responsive layout that works seamlessly on desktop, tablet, and mobile devices
