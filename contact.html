@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact River Valley Wound Care to schedule an appointment or learn more about our services">
+    <title>Contact Us - River Valley Wound Care</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🏥</span>
+                    <span class="logo-text">River Valley Wound Care</span>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="contact.html" class="btn-primary-small">Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help you start your healing journey. Reach out today!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div>
+                    <h2>Get in Touch</h2>
+                    <p class="lead-text">Have questions or ready to schedule an appointment? We'd love to hear from you.</p>
+
+                    <div class="contact-info-card" style="margin-top: 2rem;">
+                        <h3>📞 Phone</h3>
+                        <p style="font-size: 1.25rem; color: var(--primary-color); font-weight: 600;">(555) 123-4567</p>
+                        <p>Monday - Friday: 8am - 6pm<br>Saturday: 9am - 2pm<br>Emergency: 24/7</p>
+                    </div>
+
+                    <div class="contact-info-card" style="margin-top: 1.5rem;">
+                        <h3>✉️ Email</h3>
+                        <p style="font-size: 1.25rem; color: var(--primary-color); font-weight: 600;">info@rivervalleywoundcare.com</p>
+                        <p>We typically respond within 24 hours</p>
+                    </div>
+
+                    <div class="contact-info-card" style="margin-top: 1.5rem;">
+                        <h3>📍 Location</h3>
+                        <p style="font-size: 1.25rem; color: var(--primary-color); font-weight: 600;">123 Medical Plaza Dr<br>River Valley, State 12345</p>
+                        <p>Ample parking available<br>Wheelchair accessible</p>
+                    </div>
+
+                    <div class="contact-info-card" style="margin-top: 1.5rem;">
+                        <h3>🚨 Emergency</h3>
+                        <p style="color: var(--error); font-weight: 600;">For life-threatening emergencies, call 911</p>
+                        <p>For urgent wound concerns after hours, call our main number for on-call physician support.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" style="margin-top: 2rem;">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reason">Reason for Contact *</label>
+                            <select id="reason" name="reason" required>
+                                <option value="">Please select...</option>
+                                <option value="new-patient">New Patient Appointment</option>
+                                <option value="existing-patient">Existing Patient Question</option>
+                                <option value="insurance">Insurance Question</option>
+                                <option value="referral">Physician Referral</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferred-contact">Preferred Contact Method</label>
+                            <select id="preferred-contact" name="preferred-contact">
+                                <option value="phone">Phone</option>
+                                <option value="email">Email</option>
+                                <option value="either">Either</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Please provide details about your inquiry or the type of wound care you need..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="display: flex; align-items: start; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" required style="width: auto; margin-top: 0.25rem;">
+                                <span style="font-weight: normal; color: var(--text-secondary);">I consent to River Valley Wound Care contacting me about my inquiry. I understand that my information will be kept confidential per HIPAA regulations.</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Send Message</button>
+
+                        <div id="formMessage" style="margin-top: 1rem; padding: 1rem; border-radius: 0.5rem; display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="content-section" style="background: var(--background-alt);">
+        <div class="container">
+            <h2 class="text-center mb-3">Visit Our Office</h2>
+            <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow-md); text-align: center;">
+                <div style="background: var(--background-dark); border-radius: 0.5rem; padding: 4rem 2rem; margin-bottom: 1.5rem;">
+                    <p style="color: var(--text-secondary); font-size: 1.1rem;">📍 Interactive Map Placeholder</p>
+                    <p style="color: var(--text-light); margin-bottom: 0;">123 Medical Plaza Dr, River Valley, State 12345</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: left;">
+                    <div>
+                        <h4 style="font-family: var(--font-body); color: var(--primary-color); margin-bottom: 0.5rem;">🚗 Parking</h4>
+                        <p style="margin-bottom: 0; color: var(--text-secondary);">Free parking available in Medical Plaza lot. Handicap accessible spaces near entrance.</p>
+                    </div>
+                    <div>
+                        <h4 style="font-family: var(--font-body); color: var(--primary-color); margin-bottom: 0.5rem;">🚌 Public Transit</h4>
+                        <p style="margin-bottom: 0; color: var(--text-secondary);">Bus routes 12 and 45 stop at Medical Plaza. Route 7 stops two blocks away.</p>
+                    </div>
+                    <div>
+                        <h4 style="font-family: var(--font-body); color: var(--primary-color); margin-bottom: 0.5rem;">♿ Accessibility</h4>
+                        <p style="margin-bottom: 0; color: var(--text-secondary);">Fully wheelchair accessible facility with elevator access to all floors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="feature-card" style="text-align: left; margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color);">Do I need a referral?</h3>
+                    <p style="margin-bottom: 0;">While referrals are not always required, some insurance plans do require them. We recommend checking with your insurance provider. We're happy to help coordinate with your primary care physician.</p>
+                </div>
+
+                <div class="feature-card" style="text-align: left; margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color);">What should I bring to my first appointment?</h3>
+                    <p style="margin-bottom: 0;">Please bring your insurance cards, photo ID, list of current medications, and any relevant medical records or recent test results. If you have a referral, please bring that as well.</p>
+                </div>
+
+                <div class="feature-card" style="text-align: left; margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color);">How long will treatment take?</h3>
+                    <p style="margin-bottom: 0;">Treatment duration varies depending on wound type, size, and individual healing factors. Most patients see significant improvement within 4-12 weeks. We'll provide a personalized timeline during your consultation.</p>
+                </div>
+
+                <div class="feature-card" style="text-align: left; margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color);">Do you offer same-day appointments?</h3>
+                    <p style="margin-bottom: 0;">We strive to accommodate urgent cases as quickly as possible. Call us in the morning, and we'll do our best to see you the same day for acute wound concerns.</p>
+                </div>
+
+                <div class="feature-card" style="text-align: left;">
+                    <h3 style="color: var(--primary-color);">What if I need care outside of business hours?</h3>
+                    <p style="margin-bottom: 0;">For urgent concerns, call our main number. Our on-call physician will return your call promptly. For life-threatening emergencies, always call 911 or go to the nearest emergency room.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Don't Wait to Heal</h2>
+                <p>The sooner you start treatment, the better your outcome. Contact us today!</p>
+                <a href="tel:5551234567" class="btn-primary">Call Now: (555) 123-4567</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>River Valley Wound Care</h3>
+                    <p>Providing expert wound care services with compassion and excellence.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ info@rivervalleywoundcare.com</li>
+                        <li>📍 123 Medical Plaza Dr</li>
+                        <li>River Valley, State 12345</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 8am - 6pm</li>
+                        <li>Saturday: 9am - 2pm</li>
+                        <li>Sunday: Closed</li>
+                        <li>Emergency: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 River Valley Wound Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
